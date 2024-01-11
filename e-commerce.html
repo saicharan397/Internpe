@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title> CHARAN dress Store</title>
+</head>
+<body>
+  <header>
+    <h1><i>CHARAN Dress Store</i></h1>
+  </header>
+  <main>
+    <section class="product">
+      <img src="https://i.pinimg.com/474x/f6/01/58/f60158517dbe532801c3c810c94c8272.jpg" height="100" width="100" alt="Product 1">
+      <h2>Product 1</h2>
+      <p>PLUM MAXI DRESS</p>
+      <p class="price">$19.99</p>
+      <button onclick="addToCart('Product 1', 19.99)">Add to Cart</button>
+    </section>
+    <section class="product">
+      <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/20437958/2022/10/18/9ec1461d-3fd9-462b-9075-a663b4d0e0aa1666031649359AthenaBurgundyV-neckpuffsleeveformaldresswithbackslit1.jpg" height="200" width="150" alt="Product 2">
+      <h2>Product 2</h2>
+      <p>BLACK MAXI DRESS</p>
+      <p class="price">$29.99</p>
+      <button onclick="addToCart('Product 2', 29.99)">Add to Cart</button>
+    </section>
+  </main>
+  <aside>
+    <h2>Shopping Cart</h2>
+    <ul id="cart">
+    </ul>
+    <p>Total: <span id="total">$0.00</span></p>
+    <button onclick="checkout()">Checkout</button>
+  </aside>
+  <footer>
+    <p>&copy; 2023 charan dress Store. All rights reserved.</p>
+  </footer>
+  <script src="style.css"></script>
+  <script src="script.js"></script>
+</body>
+</html>
